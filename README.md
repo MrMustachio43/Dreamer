@@ -14,10 +14,10 @@ the super jump launches you in which ever direction you are facing
 
 
 This is the entire logic behind the movement, this includes interupting proccesses (e.g. sliding into walking or super jump)
+![Screenshot 2024-09-22 201128](https://github.com/user-attachments/assets/1391eca9-bee2-42e7-8b0d-90c649567679)
 ![Screenshot 2024-09-22 201203](https://github.com/user-attachments/assets/9663188b-170a-4c13-8993-fb14679af974)
 ![Screenshot 2024-09-22 201217](https://github.com/user-attachments/assets/1fdb15dc-2bf3-454d-9bbe-d124d348b007)
 ![Screenshot 2024-09-22 201232](https://github.com/user-attachments/assets/2a54eb7c-797d-4b65-a856-0bdc809ea5a3)
-![Screenshot 2024-09-22 201128](https://github.com/user-attachments/assets/1391eca9-bee2-42e7-8b0d-90c649567679)
 
 This section moves the camera to avoid it intersecting with a wall, it's also used to create a forward vector for wall running by storing a vector of what side has hit a wall
 ![Screenshot 2024-09-22 201243](https://github.com/user-attachments/assets/079f4286-aca1-48ba-80fa-d71f1dacce5c)
