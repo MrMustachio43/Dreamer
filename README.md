@@ -22,6 +22,24 @@ This is the entire logic behind the movement, this includes interupting proccess
 This section moves the camera to avoid it intersecting with a wall, it's also used to create a forward vector for wall running by storing a vector of what side has hit a wall
 ![Screenshot 2024-09-22 201243](https://github.com/user-attachments/assets/079f4286-aca1-48ba-80fa-d71f1dacce5c)
 
+## Procedural Levels
+I haven't spent to long on this section yet, it is currently in a work in progress
+
+![ezgif-4-805dd9ffc7](https://github.com/user-attachments/assets/8ca3fc94-c22e-4a10-af95-a76f7da472d5)
+
+Each room has exits, these exits determin where future "rooms" may spawn
+![Screenshot 2024-09-22 205004](https://github.com/user-attachments/assets/2aba4329-aa28-4c28-9d4d-5b07cb624cf2)
+
+Making use of recursion allows me to delay the next loop. I delay so that it doesn't try to do to much in one loop.
+Each loop spawns in X amount of rooms, if we try to spawn to many rooms in at one go, it can crash, so i stick to sets of 100.
+So if i wanted 500 rooms, I'd spawn 5 lots of 100 rooms, which would take 5 game ticks.
+![Screenshot 2024-09-22 204850](https://github.com/user-attachments/assets/c0ef6913-d99a-4072-a817-0aebdf00c6a6)
+![Screenshot 2024-09-22 204841](https://github.com/user-attachments/assets/49336946-5c45-4c99-b58a-221ddb3cb099)
+![Screenshot 2024-09-22 204822](https://github.com/user-attachments/assets/409602b1-544d-4c36-8587-3fc53ade69d3)
+![Screenshot 2024-09-22 204905](https://github.com/user-attachments/assets/58c354d0-0c0b-43b9-9490-1bd3067a5aa7)
+
+
+
 ## Character Customization
 
  With the character customizer, you can change the shape of your face with morph targets, the colour of you skin and your hair (Head, beard, moustache, eyebrows and lashes)
