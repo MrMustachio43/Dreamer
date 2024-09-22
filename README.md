@@ -6,7 +6,7 @@ A UE5 game based on fast paced movement with an open procedural level design.
  With the character customizer, you can change the shape of your face with morph targets, the colour of you skin and your hair (Head, beard, moustache, eyebrows and lashes)
 
 An example of Changing morphs:
-https://github.com/user-attachments/assets/b7377659-1a35-40e8-b5da-1ce805131029
+![ezgif-2-9831f5dde4](https://github.com/user-attachments/assets/477c823d-4d62-41d0-8bc9-4616f538badb)
 
 Loading morphs to the character:
 ![Screenshot 2024-09-22 193540](https://github.com/user-attachments/assets/877e2331-f0b0-4c83-8756-be563c626f79)
