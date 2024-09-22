@@ -33,9 +33,14 @@ As UE doesn't have a colour picker widget, i had to create my own. I did this by
 using that vector to zoom into a colour spectrum to provide a colour
 
 ![Screenshot 2024-09-22 195807](https://github.com/user-attachments/assets/ab4535cd-fb41-4950-994b-9a607e5b4f7e)
+
 The slider the right allows for you to change the brightness of the same colour by adjusting only the y value of the 2D slider
 
 
 When you select a colour it changes a value of a material parameter. The material parameter isn't used for its colour but because it can be used to store up to 4 values of which we use 3 (r = x, g = y, b = toggle)
 ![Screenshot 2024-09-22 195435](https://github.com/user-attachments/assets/1867c48f-8399-4e19-9635-7f04c642e1ea)
 ![Screenshot 2024-09-22 200202](https://github.com/user-attachments/assets/f66f2add-8fa9-40ef-baf4-067a363ef7a1)
+
+Implimenting the colour picker is as simple as putting the material function in and the material parameter that holds the values you want
+![Screenshot 2024-09-22 200753](https://github.com/user-attachments/assets/70bcb03f-9802-4d2d-a5bf-c1c4168fbcbf)
+
