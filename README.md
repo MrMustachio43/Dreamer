@@ -1,6 +1,26 @@
 # Dreamer
 A UE5 game based on fast paced movement with an open procedural level design.
 
+## Movement System
+You are able to run, walk and crouch with one procedural animation. The movement system also includes wall running, jumping/super jump, sliding and dodging.
+
+![ezgif-7-b5b0621a94](https://github.com/user-attachments/assets/7619d05e-b12b-4505-9155-7ed1b8e7c860)
+![ezgif-7-ab404f1b81](https://github.com/user-attachments/assets/8570e488-c533-495d-8eec-422bfc4cc3be)
+![ezgif-7-d314ac4f7d](https://github.com/user-attachments/assets/c5ce14db-82df-4526-ba53-0cfc68a94095)
+![ezgif-7-bfffee9d2f](https://github.com/user-attachments/assets/8747117b-b98e-4579-a648-261311ac5d53)
+![ezgif-7-f68d485a07](https://github.com/user-attachments/assets/7dea635b-d4ff-4faf-8ea4-3affd2b5ebd8)
+the super jump launches you in which ever direction you are facing
+
+
+This is the entire logic behind the movement, this includes interupting proccesses (e.g. sliding into walking or super jump)
+![Screenshot 2024-09-22 201128](https://github.com/user-attachments/assets/1391eca9-bee2-42e7-8b0d-90c649567679)
+![Screenshot 2024-09-22 201203](https://github.com/user-attachments/assets/9663188b-170a-4c13-8993-fb14679af974)
+![Screenshot 2024-09-22 201217](https://github.com/user-attachments/assets/1fdb15dc-2bf3-454d-9bbe-d124d348b007)
+![Screenshot 2024-09-22 201232](https://github.com/user-attachments/assets/2a54eb7c-797d-4b65-a856-0bdc809ea5a3)
+
+This section moves the camera to avoid it intersecting with a wall, it's also used to create a forward vector for wall running by storing a vector of what side has hit a wall
+![Screenshot 2024-09-22 201243](https://github.com/user-attachments/assets/079f4286-aca1-48ba-80fa-d71f1dacce5c)
+
 ## Character Customization
 
  With the character customizer, you can change the shape of your face with morph targets, the colour of you skin and your hair (Head, beard, moustache, eyebrows and lashes)
@@ -43,19 +63,3 @@ When you select a colour it changes a value of a material parameter. The materia
 
 Implimenting the colour picker is as simple as putting the material function in and the material parameter that holds the values you want
 ![Screenshot 2024-09-22 200753](https://github.com/user-attachments/assets/70bcb03f-9802-4d2d-a5bf-c1c4168fbcbf)
-
-
-## Movement System
-You are able to run, walk and crouch with one procedural animation. The movement system also includes wall running, jumping/super jump, sliding and dodging.
-
-![ezgif-7-b5b0621a94](https://github.com/user-attachments/assets/7619d05e-b12b-4505-9155-7ed1b8e7c860)
-![ezgif-7-ab404f1b81](https://github.com/user-attachments/assets/8570e488-c533-495d-8eec-422bfc4cc3be)
-![ezgif-7-d314ac4f7d](https://github.com/user-attachments/assets/c5ce14db-82df-4526-ba53-0cfc68a94095)
-![ezgif-7-bfffee9d2f](https://github.com/user-attachments/assets/8747117b-b98e-4579-a648-261311ac5d53)
-![ezgif-7-f68d485a07](https://github.com/user-attachments/assets/7dea635b-d4ff-4faf-8ea4-3affd2b5ebd8)
-
-the super jump launches you in which ever direction you are facing
-
-
-
-
