@@ -9,6 +9,7 @@ You are able to run, walk and crouch with one procedural animation. The movement
 ![ezgif-7-d314ac4f7d](https://github.com/user-attachments/assets/c5ce14db-82df-4526-ba53-0cfc68a94095)
 ![ezgif-7-bfffee9d2f](https://github.com/user-attachments/assets/8747117b-b98e-4579-a648-261311ac5d53)
 ![ezgif-7-f68d485a07](https://github.com/user-attachments/assets/7dea635b-d4ff-4faf-8ea4-3affd2b5ebd8)
+
 the super jump launches you in which ever direction you are facing
 
 
