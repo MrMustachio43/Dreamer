@@ -29,7 +29,9 @@ When it comes to saving, i go through seperate fungtions which writes to a file 
 ![Screenshot 2024-09-22 194555](https://github.com/user-attachments/assets/13adce66-84bc-466f-851e-6476bd176cea)
 
 ### Colour Picker
-As UE doesn't have a colour picker widget, i had to create my own. I did this by using a 2D slider to give an x and y position, using that vector to zoom into a colour spectrum to provide a colour
+As UE doesn't have a colour picker widget, i had to create my own. I did this by using a 2D slider to give an x and y position, 
+using that vector to zoom into a colour spectrum to provide a colour
+
 ![Screenshot 2024-09-22 195807](https://github.com/user-attachments/assets/ab4535cd-fb41-4950-994b-9a607e5b4f7e)
 The slider the right allows for you to change the brightness of the same colour by adjusting only the y value of the 2D slider
 
