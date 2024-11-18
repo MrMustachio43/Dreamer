@@ -1,5 +1,5 @@
 # Dreamer
-A UE5 game based on fast paced movement with an open procedural level design.
+A UE5 game based on fast paced movement with an open procedural level design. It will have a skill tree based magic system that will serve as players abilities and one of the main proggression sytems.
 
 ## Movement System
 You are able to run, walk and crouch with one procedural animation. The movement system also includes wall running, jumping/super jump, sliding and dodging.
@@ -23,7 +23,6 @@ This section moves the camera to avoid it intersecting with a wall, it's also us
 ![Screenshot 2024-09-22 201243](https://github.com/user-attachments/assets/079f4286-aca1-48ba-80fa-d71f1dacce5c)
 
 ## Procedural Levels
-I haven't spent to long on this section yet, it is currently in a work in progress
 
 ![ezgif-4-805dd9ffc7](https://github.com/user-attachments/assets/8ca3fc94-c22e-4a10-af95-a76f7da472d5)
 
@@ -37,6 +36,40 @@ So if i wanted 500 rooms, I'd spawn 5 lots of 100 rooms, which would take 5 game
 ![Screenshot 2024-09-22 204841](https://github.com/user-attachments/assets/49336946-5c45-4c99-b58a-221ddb3cb099)
 ![Screenshot 2024-09-22 204850](https://github.com/user-attachments/assets/c0ef6913-d99a-4072-a817-0aebdf00c6a6)
 ![Screenshot 2024-09-22 204905](https://github.com/user-attachments/assets/58c354d0-0c0b-43b9-9490-1bd3067a5aa7)
+
+This is the currently finished (It will be expaned on later once more features are complete) version.
+It spawns in many islands that contains prcural grass, tress, POIs and a floating river that runs through the map. 
+https://github.com/user-attachments/assets/7b9995bc-5a11-4e35-b074-722ad83f9609
+![Screenshot 2024-11-18 140716](https://github.com/user-attachments/assets/3f0051ce-578f-422d-8426-aa01cb43238b)
+
+Whilst generating, each island (if successfully placed) is checked to see if its the furthest in a ceratin direction, if it is, then the new location gets saved.
+When the islands are done generating, it sends off the loactions of the furthest directions to the river and it will generate it, with the goal being to reach those locations.
+![Screenshot 2024-11-18 141325](https://github.com/user-attachments/assets/88a124a0-a2f1-4e2f-a495-2e4f32a51a2a)
+![Screenshot 2024-11-18 141006](https://github.com/user-attachments/assets/a4418e9f-9d8d-4c83-bc2b-96a87878f8b9)
+
+To generate the river, each island has a set of overlap boxes (blue boxes). The river uses its overlap box to check which of the islands boxes will get it closer to its destination.
+It repeats this for each of the directions. However instead of starting at the spawn island (like the first one does), the other rivers start anywhere along the first.
+![Screenshot 2024-11-18 142438](https://github.com/user-attachments/assets/4ca84c94-1221-4cd5-9cdc-c7e3a942175d)
+![Screenshot 2024-11-18 142331](https://github.com/user-attachments/assets/fe3bf147-2e00-4493-863f-0d5dd31d9876)
+
+This loops through all the found overlap boxes and detemains the furthest away location. If of the found locations is closer to its current destination
+it will spawn a spline point and move the overlap box to the new location then repeat. If the location is the same 2 times in a row, it ends and does the next river until they're all done.
+
+Trees, floating rocks and anything in the future that is only one randomizable mesh, is represented by a placeholder (they each have their own folder to loop through induvidualy). 
+A function is run that decides if it spawns. If it does spawn, the temp mesh is replaced with a random one in a list of possible meshes.
+(The obelisk looking things show where trees can possibly spawn, the grey diamonds show where floating rocks can spawn)
+![Screenshot 2024-11-18 143710](https://github.com/user-attachments/assets/2ceffc05-4962-4bd4-84d7-4b1e4ca3737c)
+![Screenshot 2024-11-18 142454](https://github.com/user-attachments/assets/6c34673a-969f-40e7-a8af-9bbac5646305)
+![Screenshot 2024-11-18 143450](https://github.com/user-attachments/assets/474b5c30-8397-4d7c-be0a-d2e1ae28bdfd)
+![Screenshot 2024-11-18 143759](https://github.com/user-attachments/assets/3679c6fd-b1b8-4785-8ac2-b4841a46fc21)
+![Screenshot 2024-11-18 144051](https://github.com/user-attachments/assets/948a21c6-ec26-447b-b1d6-22b720c1ca61)
+
+The spawning of decoration is handled by the make pretty function. It calls sevral other functions wich all follow the same concept.
+Get the decoration type folder --> loop through --> use random number (based on list length) --> if should spawn, spawn random --> repeat until non left or failure
+
+
+
+The POI system
 
 
 
