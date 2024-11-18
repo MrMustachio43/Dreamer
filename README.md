@@ -54,6 +54,8 @@ It repeats this for each of the directions. However instead of starting at the s
 
 This loops through all the found overlap boxes and detemains the furthest away location. If of the found locations is closer to its current destination
 it will spawn a spline point and move the overlap box to the new location then repeat. If the location is the same 2 times in a row, it ends and does the next river until they're all done.
+![Screenshot 2024-11-18 145705](https://github.com/user-attachments/assets/84f5f7e4-111d-4eca-a819-d2ce3fb63efb)
+
 
 Trees, floating rocks and anything in the future that is only one randomizable mesh, is represented by a placeholder (they each have their own folder to loop through induvidualy). 
 A function is run that decides if it spawns. If it does spawn, the temp mesh is replaced with a random one in a list of possible meshes.
@@ -120,3 +122,7 @@ When you select a colour it changes a value of a material parameter. The materia
 
 Implimenting the colour picker is as simple as putting the material function in and the material parameter that holds the values you want
 ![Screenshot 2024-09-22 200753](https://github.com/user-attachments/assets/70bcb03f-9802-4d2d-a5bf-c1c4168fbcbf)
+
+## Enemy AI
+
+Currently being worked on
