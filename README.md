@@ -69,8 +69,13 @@ Get the decoration type folder --> loop through --> use random number (based on 
 
 
 
-The POI system
-
+The POI system works the smae as generating normal decorations but it happens in a seperate BP, as its a group of objects. Some things are perminent, Whilst other
+elements are randomized to prevent repatition and help keep things more fresh.
+![Screenshot 2024-11-18 145323](https://github.com/user-attachments/assets/740bdae4-67c4-45ed-a222-fe8f12881a0c)
+![Screenshot 2024-11-18 145311](https://github.com/user-attachments/assets/b7307ba9-468b-4dbc-94b0-ceac1c033683)
+![Screenshot 2024-11-18 145333](https://github.com/user-attachments/assets/efe869a2-ef80-4d45-a7cd-6cc9743243aa)
+All meshes in the clutter folder are able to be hidden and have collision removed by the "Randomize Clutter" function.
+![Screenshot 2024-11-18 145353](https://github.com/user-attachments/assets/7a804436-ca0e-4a4e-b04e-35f663db109c)
 
 
 ## Character Customization
